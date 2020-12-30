@@ -15,6 +15,7 @@ function make_board () {
     make BOARD=$2
     cp build-$2/firmware.bin    $IOT/iot-bin/micropython/$1-$2-firmware.bin 2>/dev/null
     cp build-$2/application.bin $IOT/iot-bin/micropython/$1-$2-application.bin 2>/dev/null
+    sha256sum -b build-$2/application.bin >$IOT/iot-bin/micropython/$1-$2-application.sha256 2>/dev/null
     cp build-$2/firmware.dfu    $IOT/iot-bin/micropython/$1-$2-firmware.dfu 2>/dev/null
 }
 
