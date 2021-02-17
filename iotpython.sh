@@ -13,7 +13,7 @@ function make_board () {
     cp build-$2/firmware.uf2 $IOT/iot-bin/iotpython/$2.uf2
 }
 
-make_board "atmel-samd"  "feather_m4_express"
-# make_board "nrf"         "particle_argon"
+make_board "nrf"         "particle_argon"
 # make_board "nrf"         "feather_nrf52840_express"
 # make_board "stm"         "feather_stm32f405_express"
+# make_board "atmel-samd"  "feather_m4_express"
